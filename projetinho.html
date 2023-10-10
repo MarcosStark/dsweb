@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <head>
+        <title>Projetinho 09/10/2023</title>
+        <link rel="stylesheet" type="text/css" href="projetinho.css">
+    </head>   
+    <body>
+        <h2>Se sua idade for menor que 25 anos, você será reprovado.</h2>
+        <form>
+            <h4>CADASTRO</h4>
+            <label>Digite seu nome:</label><br>
+            <input id="name" type="text" placeholder="informe seu nome..."><br>
+            <label>Digite sua idade:</label><br>
+            <input id="age" type="number" placeholder="informe sua idade..."><br>
+            <label>Digite seu email:</label><br>
+            <input id="email" type="email" placeholder="informe seu email..."><br><br>
+
+            <button type="button" onclick="initialize()">Enviar</button>
+        </form>
+
+        <div id="tableStyle">
+            <table>
+                <tr>
+                    <td class="tableHead">Name</td>
+                    <td class="tableHead">Idade</td>
+                    <td class="tableHead">Email</td>
+                    <td class="tableHead">Situação</td>
+                </tr>
+                <tr>
+                    <td id="tableName"></td>
+                    <td id="tableAge"></td>
+                    <td id="tableEmail"></td>
+                    <td id="tableSituation"></td>
+                </tr>
+            </table>
+        </div>
+
+        <button id="show" type="button" onclick="show()">Exibir</button>
+    </body>
+    <script lang="javascript" src="projetinhojs.js"></script>
+    
+</html>
