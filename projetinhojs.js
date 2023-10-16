@@ -24,6 +24,15 @@ function show(){
     }
 }
 
+    function remove(){
+    document.getElementById("tableName").innerHTML = "";
+    document.getElementById("tableAge").innerHTML = "";
+    document.getElementById("tableEmail").innerHTML = "";
+
+    document.getElementById("tableSituation").innerHTML = "";
+    situation.style.backgroundColor = "";
+}
+
 
 
 
