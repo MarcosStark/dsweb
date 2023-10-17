@@ -1,23 +1,37 @@
 #display{
     width: 130px;
-    height: 25px;
+    height: 20px;
     border: 1px solid black;
     border-radius: 5px;
-    margin-left: 10px;
-}
-body{
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 150px;
-    text-align: center;
+    margin-left: 35px;
+    background-color: aliceblue;
+    text-align: right;
+    padding: 3px 3px 2px 0px;
+ 
 }
 
 table{
     text-align: center;
-    border: 2px solid gold;
-    margin-left: 20px;
+    margin-left: 18px;
 }
+
 button{
     padding: 5px;
-    width: 40px;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#calc{
+    background-color: gray;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    margin-left: 650px;
+}
+
+h4{
+    background-color: aliceblue;
 }
