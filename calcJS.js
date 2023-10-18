@@ -1,7 +1,8 @@
 var historyNumb = [];
+var historyNumb2 = [];
+var lastNumb = [];
 var operators = ["+","-","/","*"];
 var operator;
-var lastNumb;
 var result;
 
 document.addEventListener("keyup", e=> {         
@@ -38,6 +39,7 @@ document.addEventListener("keyup", e=> {
 
         case "Enter":
         case "=":
+            calc();
             document.getElementById("display").innerHTML = result;
             break;
 
@@ -51,40 +53,40 @@ function getValues(numb){
 
     if(isOperator(numb) == true){
         operator = numb;
-        console.log("op: " + operator);
-
+        lastNumb = [];
     }else{
-        historyNumb.push(numb);
-        console.log("qq?");
-    }
 
-    result = historyNumb.reduce(calc); 
-    console.log(result);
-}
+        if(operator == undefined){
+            lastNumb.push(numb);
+            historyNumb.push(lastNumb.join(""));
+        } else {
+            lastNumb.push(numb);
+            historyNumb2.push(lastNumb.join(""));
+        }
+    }
+}   
 
 function isOperator(numb){
-    console.log("teste: " + numb);
    return operators.indexOf(numb) != -1;
 }
 
-function calc(total, value) {
-    console.log(operator);
+function calc() {
     switch(operator){   
 
         case "+":
-            return total + value;
+            result =  parseInt(historyNumb.pop()) + parseInt(historyNumb2.pop());
             break;  
 
         case "-":
-            return total - value;
+            result =  parseInt(historyNumb.pop()) - parseInt(historyNumb2.pop());            
             break;  
         
         case "*":
-            return total * value;
+            result =  parseInt(historyNumb.pop()) * parseInt(historyNumb2.pop()); 
             break;  
         
         case "/":
-            return total / value;
+            result =  parseInt(historyNumb.pop()) / parseInt(historyNumb2.pop());
             break; 
     }
   }
