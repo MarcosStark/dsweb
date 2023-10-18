@@ -1,0 +1,19 @@
+#layout{
+    border: 2px solid black;
+    border-radius: 70px;
+    width: 150px;
+    height: 150px;
+    margin-left: 650px;
+    background-color: gray;
+}
+
+#display{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 137px;
+    text-align: center;
+    padding: 10px 5px 0px 5px;
+    margin: 55px 25px 25px 0px;
+    background-color: aliceblue;
+}
