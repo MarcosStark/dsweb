@@ -17,7 +17,7 @@ document.addEventListener("keyup", e=> {
         case "7":
         case "8":
         case "9":
-            calc(parseInt(e.key));
+            getValues(parseInt(e.key));
             document.getElementById("display").innerHTML = e.key;
             break;
 
@@ -32,7 +32,7 @@ document.addEventListener("keyup", e=> {
         case "/":
         case "*":
         case "%":
-            calc(e.key);
+            getValues(e.key);
             document.getElementById("display").innerHTML = e.key;
             break;
 
@@ -47,25 +47,45 @@ document.addEventListener("keyup", e=> {
     }
 })
 
-function calc(numb){
+function getValues(numb){
 
-    if(operators.indexOf(numb) == 0){
+    if(isOperator(numb) == true){
         operator = numb;
-    } else {
+        console.log("op: " + operator);
+
+    }else{
         historyNumb.push(numb);
+        console.log("qq?");
     }
 
-    result = historyNumb.reduce(myFunc); 
+    result = historyNumb.reduce(calc); 
     console.log(result);
 }
 
-function myFunc(total, num) {
+function isOperator(numb){
+    console.log("teste: " + numb);
+   return operators.indexOf(numb) != -1;
+}
+
+function calc(total, value) {
     console.log(operator);
-    switch(operator){
+    switch(operator){   
 
         case "+":
-        return total + num;
-        break;  
+            return total + value;
+            break;  
+
+        case "-":
+            return total - value;
+            break;  
+        
+        case "*":
+            return total * value;
+            break;  
+        
+        case "/":
+            return total / value;
+            break; 
     }
   }
 
