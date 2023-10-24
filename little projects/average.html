@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <head>
+        <title>Projetinho 09/10/2023</title>
+        <link rel="stylesheet" type="text/css" href="average.css">
+    </head>   
+    <body>
+        <form>
+            <h4>CÁLCULO APROVAÇÃO/REPROVAÇÃO</h4>
+            <label>Digite a 1ª nota:</label><br>
+            <input id="n1" type="text" placeholder="informe a 1ª nota..."><br>
+            <label>Digite a 2ª nota:</label><br>
+            <input id="n2" type="number" placeholder="informe a 2ª nota..."><br>
+
+            <button type="button" onclick="initialize()">Enviar</button>
+        </form>
+
+        <div id="tableStyle">
+            <table>
+                <tr>
+                    <td class="tableHead">NOTA 1</td>
+                    <td class="tableHead">NOTA 2</td>
+                    <td class="tableHead">MÉDIA</td>
+                    <td class="tableHead">SITUAÇÃO</td>
+                </tr>
+                <tr>
+                    <td id="tableN1"></td>
+                    <td id="tableN2"></td>
+                    <td id="tableResult"></td>
+                    <td id="tableSituation"></td>
+                </tr>
+            </table>
+        </div><br>
+
+        <div id="manipBtn">
+            <button id="show" type="button" onclick="show()">Exibir</button>
+            <button id="show" type="button" onclick="remove()">Remover</button>
+        </div>
+
+    </body>
+    <script lang="javascript" src="average.js"></script>
+    
+</html>
