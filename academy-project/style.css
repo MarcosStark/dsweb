@@ -113,12 +113,16 @@ button{
     visibility: hidden;
 }   
 
+#tr-bd{
+    visibility: hidden;
+} 
+
 th{
     border: 1px solid black;
 }
 
 
-.std-bd{
+.table-bd{
     border: 1px solid black;
     padding: 0px 10px 0px 10px;
     text-align: center;
