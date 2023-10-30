@@ -32,3 +32,8 @@ function consultStudents(){
     document.getElementById("std-bd-telephone").innerHTML = stdTelephone;
     document.getElementById("std-bd-email").innerHTML = stdEmail;
 } 
+
+function trRegister(){
+
+    
+}
