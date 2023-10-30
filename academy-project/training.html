@@ -26,13 +26,13 @@
                 <tr>
                     <td>
                         <label>Código</label><br>
-                        <input type="text" placeholder="digite o nome..." required><br>
+                        <input id="code" type="text" placeholder="digite o nome..." required><br>
                         <label>Nome</label><br>
-                        <input type="text" placeholder="digite o nome..." required><br>
+                        <input id="name" type="text" placeholder="digite o nome..." required><br>
                         <label>Série</label><br>
-                        <input type="text" placeholder="digite a idade..." required><br>
+                        <input id="range" type="text" placeholder="digite a idade..." required><br>
                         <label>Nível</label><br>
-                        <input type="text" placeholder="digite o peso..." required><br>
+                        <input id="level" type="text" placeholder="digite o peso..." required><br>
                         <label>Status</label><br>
                         <span id="status-train">Não iniciado</span>
                     </td>
@@ -40,5 +40,22 @@
             </table><br>
             <button type="submit">Cadastrar</button>
             <button type="button">Consultar treinos</button>
+        </form>
+            <table>
+                <tr>
+                    <th class="table-bd">COD.Treino</th>
+                    <th class="table-bd">Nome</th>
+                    <th class="table-bd">Série</th>
+                    <th class="table-bd">Nível</th>
+                    <th class="table-bd">Status</th>
+                </tr>
+                <tr>
+                    <td class="table-bd" id="tr-bd-code"></td>
+                    <td class="table-bd" id="tr-bd-name"></td>
+                    <td class="table-bd" id="tr-bd-range"></td>
+                    <td class="table-bd" id="tr-bd-level"></td>
+                    <td class="table-bd" id="tr-bd-status"></td>
+                </tr>
+            </table>
         </body>
     </html>           
