@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Academia Life Stylle</title>
+        <link rel="icon" type="image/x-icon" href="https://img.elo7.com.br/product/main/32D3EB5/adesivo-parede-academia-fitness-crossfit-homem-mulher-halter-homem.jpg">
+        <link rel="stylesheet" href="style.css"/> 
+    </head>
+    <body>
+         
+        <header> 
+            <img src="https://scontent.faju4-2.fna.fbcdn.net/v/t39.30808-6/387735156_865821438395212_7197582003961948565_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BgHcax9NtOQAX9wtDyy&_nc_ht=scontent.faju4-2.fna&oh=00_AfAi3m-WZFmiYjBZK8k0UEc7NuListB-DmMHeY1c46MfHA&oe=654171B9">
+            <h1>Academia Life Stylle</h1></header>
+        <nav>
+            <ul>
+                <li>
+                    <ul><a href="index.html">HOME </a></ul>
+                    <ul>ALUNO</ul>
+                    <ul><a href="training.html">TREINO</a></ul>
+                    <ul><a href="trainer.html">INSTRUTOR</a></ul>
+
+                </li>
+            </ul>
+        </nav> 
+        <form action="#" id="std-form">
+            <h2>Cadastro Aluno</h2><br>
+            <table>
+                <tr>
+                    <td>
+                        <label>Nome</label><br>
+                        <input id="std-name" type="text" placeholder="digite o nome..." required><br>
+                        <label>Idade</label><br>
+                        <input id="std-age" type="text" placeholder="digite a idade..." required><br>
+                        <label>Peso</label><br>
+                        <input id="std-weight" type="text" placeholder="digite o peso..." required><br>
+                        <label>Altura</label><br>
+                        <input id="std-height" type="text" placeholder="digite a altura..." required><br>
+                        <label>Data</label><br>
+                        <input id="std-date" type="data" placeholder="digite a data..." required><br>     
+                    </td>
+                    
+                    <td>
+                        <label>CEP</label><br>
+                        <input id="std-zp" type="text" placeholder="digite o CEP..." required><br>
+                        <label>Número</label><br>
+                        <input id="std-number" type="text" placeholder="digite o número..." required><br>
+                        <label>Complemento</label><br>
+                        <input id="std-complement" type="text" placeholder="digite o complemento..." required><br>
+                        <label>Telefone</label><br>
+                        <input id="std-telephone" type="tel" placeholder="digite o telefone..." required><br>
+                        <label>Email</label><br>
+                        <input id="std-email" type="email" placeholder="digite o email..." required><br>
+                    </td>
+                </tr>
+            </table><br>
+            <button type="submit" onclick="stdRegister()">Cadastrar</button>
+            <button type="button" onclick="consultStudents()">Consultar alunos </button>
+        </form>
+        <table id="std-bd">
+            <tr>
+                <th class="std-bd">NOME</th>
+                <th class="std-bd">IDADE</th>
+                <th class="std-bd">PESO</th>
+                <th class="std-bd">ALTURA</th>
+                <th class="std-bd">DATA CAD</th>
+                <th class="std-bd">TELEFONE</th>
+                <th class="std-bd">EMAIL</th>
+                <th class="std-bd">CEP</th>
+                <th class="std-bd">NUMERO</th>
+                <th class="std-bd">COMPLEMENTO</th>
+            </tr>
+            <tr>
+                <td class="std-bd" id="std-bd-name"></td>
+                <td class="std-bd" id="std-bd-age"></td>
+                <td class="std-bd" id="std-bd-weight"></td>
+                <td class="std-bd" id="std-bd-height"></td>
+                <td class="std-bd" id="std-bd-date"></td>
+                <td class="std-bd" id="std-bd-telephone"></td>
+                <td class="std-bd" id="std-bd-email"></td>
+                <td class="std-bd" id="std-bd-zp"></td>
+                <td class="std-bd" id="std-bd-number"></td>
+                <td class="std-bd" id="std-bd-complement"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="academy.js"></script>
+</html>           
