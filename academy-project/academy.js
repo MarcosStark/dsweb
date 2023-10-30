@@ -25,6 +25,13 @@ function stdRegister(){
     stdComplement = document.getElementById("std-complement").push(value);
     stdTelephone = document.getElementById("std-telephone").push(value);
     stdEmail = document.getElementById("std-email").push(value);*/
+    if(stdName != ""){
+        const teste = document.createElement("td");
+        document.getElementById("teste1").appendChild(teste);
+
+        document.getElementById("std-bd-name").innerHTML = stdName;
+  
+    }
 }
 
 function consultStudents(){
@@ -33,15 +40,6 @@ function consultStudents(){
     
     std_form.style.display = "none";
     std_bd.style.visibility = "visible";
-
-    if(stdName != ""){
-        const teste = document.getElementById("std-bd");
-
-        teste = document.createElement("tr");
-        teste.document.createElement("td");
-
-        document.getElementById("std-bd-name").innerHTML = stdName;
-    }
 
     /*document.getElementById("std-bd-age").innerHTML = stdAge;
     document.getElementById("std-bd-weight").innerHTML = stdWeight;
