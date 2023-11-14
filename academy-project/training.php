@@ -13,10 +13,10 @@
         <nav>
             <ul>
                 <li>
-                    <ul><a href="index.html">HOME </a></ul>
-                    <ul><a href="student.html">ALUNO</a></ul>
+                    <ul><a href="index.php">HOME </a></ul>
+                    <ul><a href="student.php">ALUNO</a></ul>
                     <ul>TREINO</ul>
-                    <ul><a href="trainer.html">INSTRUTOR</a></ul>
+                    <ul><a href="trainer.php">INSTRUTOR</a></ul>
                 </li>
             </ul>
         </nav> 

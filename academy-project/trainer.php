@@ -13,9 +13,9 @@
         <nav>
             <ul>
                 <li>
-                    <ul><a href="index.html">HOME</a></ul>
-                    <ul><a href="student.html">ALUNO</a></ul>
-                    <ul><a href="training.html">TREINO</a></ul>
+                    <ul><a href="index.php">HOME</a></ul>
+                    <ul><a href="student.php">ALUNO</a></ul>
+                    <ul><a href="training.php">TREINO</a></ul>
                     <ul>INSTRUTOR</ul>
                 </li>
             </ul>
