@@ -16,7 +16,7 @@
             $weight = $rows['weight'];
             $height = $rows['height'];
             $date = $rows['date'];
-            $cep = $rows['cep'];
+            $zp = $rows['zipCode'];
             $number = $rows['number'];
             $adjunct = $rows['adjunct'];
             $telephone = $rows['telephone'];
@@ -35,7 +35,7 @@
     <body>
          
         <header> 
-            <img src="https://scontent.faju4-2.fna.fbcdn.net/v/t39.30808-6/387735156_865821438395212_7197582003961948565_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BgHcax9NtOQAX9wtDyy&_nc_ht=scontent.faju4-2.fna&oh=00_AfAi3m-WZFmiYjBZK8k0UEc7NuListB-DmMHeY1c46MfHA&oe=654171B9">
+            <img src="https://scontent.faju4-2.fna.fbcdn.net/v/t39.30808-6/387735156_865821438395212_7197582003961948565_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Jy28BazB7S8AX8JFEUk&_nc_ht=scontent.faju4-2.fna&oh=00_AfD1UsYgEnm6HWtMC7Ovi6bePEwBFC1MVl_089wS67VTCQ&oe=655B26F9">
             <h1>Academia Life Stylle</h1></header>
         <nav>
             <ul>
@@ -49,7 +49,7 @@
             </ul>
         </nav> 
         <form action="save_edit.php" method="post" id="std-form">
-            <h2>Cadastro Aluno</h2><br>
+            <h2>Atualizar Aluno</h2><br>
             <table>
                 <tr>
                     <td>
@@ -67,7 +67,7 @@
                     
                     <td>
                         <label>CEP</label><br>
-                        <input id="std-zp" name="cep" type="text"  value=<?php echo $cep;?> placeholder="digite o CEP..." required><br>
+                        <input id="std-zp" name="zp" type="text"  value=<?php echo $zp;?> placeholder="digite o CEP..." required><br>
                         <label>Número</label><br>
                         <input id="std-number" name="number" type="text"  value=<?php echo $number;?> placeholder="digite o número..." required><br>
                         <label>Complemento</label><br>
@@ -81,7 +81,7 @@
             </table><br>
             <input type="hidden" name="id" value=<?php echo $id;?>>
             <button type="submit">Salvar</button>
-            <button type="button" onclick="consultStudents()">Consultar alunos </button>
+            <a href="consult_students.php"><button type="button">Consultar alunos</button></a>
         </form>
     </body>
     <script src="academy.js"></script>

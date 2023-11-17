@@ -8,7 +8,7 @@
     $weight = $_POST['weight'];
     $height = $_POST['height'];
     $date = $_POST['date'];
-    $cep = $_POST['cep'];
+    $zp = $_POST['zp'];
     $number = $_POST['number'];
     $adjunct = $_POST['adjunct'];
     $telephone = $_POST['telephone'];
@@ -19,7 +19,7 @@
 
     $sql ="UPDATE student 
     SET name='$name', age='$age', weight='$weight', height='$height', date='$date', 
-    cep='$cep', number='$number', adjunct='$adjunct', telephone='$telephone', email='$email'
+    zipCode='$zp', number='$number', adjunct='$adjunct', telephone='$telephone', email='$email'
     WHERE id=$id"; 
 
     $result = mysqli_query($link, $sql);

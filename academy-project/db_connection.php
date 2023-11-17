@@ -25,13 +25,9 @@ class db {
 		//verficar se houve erro de conexão
 		if(mysqli_connect_errno()){
 			echo 'Erro ao tentar se conectar com o BD MySQL: '.mysqli_connect_error();	
-<<<<<<< HEAD
 		}
-=======
-		} 
->>>>>>> c154d83bccfce98c03242df30c566c65589571e7
-
-		return $con;
+		
+			return $con;
 	}
 
 }

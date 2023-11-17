@@ -7,7 +7,7 @@
     $weight = $_POST['weight'];
     $height = $_POST['height'];
     $date = $_POST['date'];
-    $cep = $_POST['cep'];
+    $zp = $_POST['zp'];
     $number = $_POST['number'];
     $adjunct = $_POST['adjunct'];
     $telephone = $_POST['telephone'];
@@ -16,11 +16,11 @@
 	$objDb = new db();
 	$link = $objDb->conecta_mysql();
 
-	$sql = "insert into student(name, age, weight, height, date, cep, number, adjunct, telephone, email) values ('$name', '$age', '$weight', '$height', '$date', '$cep', '$number', '$adjunct', '$telephone', '$email')";
+	$sql = "insert into student(name, age, weight, height, date, zipCode, number, adjunct, telephone, email) values ('$name', '$age', '$weight', '$height', '$date', '$zp', '$number', '$adjunct', '$telephone', '$email')";
 	mysqli_query($link, $sql);
 
 	//executar a query
-<<<<<<< HEAD
+
 	/*if(mysqli_query($link, $sql)){
 		echo 'Usuário registrado com sucesso!';
 	} else {
@@ -28,13 +28,5 @@
 	}*/
 
 	header("Location: student.php");
-=======
-	if(mysqli_query($link, $sql)){
-		echo 'Usuário registrado com sucesso!';
-	} else {
-		echo 'Erro ao registrar o usuário!';
-	}
->>>>>>> c154d83bccfce98c03242df30c566c65589571e7
-
 
 ?>	
