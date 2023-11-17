@@ -46,8 +46,9 @@
                         echo "<td class='table-bd'>".$rows['name']."</td>";
                         echo "<td class='table-bd'>".$rows['series']."</td>";
                         echo "<td class='table-bd'>".$rows['level']."</td>";
+                        echo "<td>"."</td>";
                         echo "<td class='table-bd'>"."<a '<button type='button' href='delete_training.php?id=$rows[id]'>"."deletar"."</button>"."</a>"."</td>";
-                        echo "<td class='table-bd'>"."<a '<button type='button' href='edit.php?id=$rows[id]'>"."editar"."</button>"."</a>"."</td>";
+                        echo "<td class='table-bd'>"."<a '<button type='button' href='edit_training.php?id=$rows[id]'>"."editar"."</button>"."</a>"."</td>";
                         echo "</tr>"; 
                     }         
                 ?>
@@ -55,5 +56,5 @@
             </table>
     </body><br>
         <a href="index.php"><button type="button">Home</button></a>
-        <a href="training.php"><button type="button">Cadastrar instrutor</button></a>
+        <a href="training.php"><button type="button">Cadastrar treino</button></a>
 </html>
