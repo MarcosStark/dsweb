@@ -1,7 +1,7 @@
 <?php
     //session_start();
     include_once('db_connection.php');
-    $sql = "SELECT * FROM training ORDER BY id DESC";
+    $sql = "SELECT * FROM trainer ORDER BY id DESC";
     $objDb = new db();
 	$link = $objDb->conecta_mysql();
     $result = mysqli_query($link, $sql);
@@ -32,11 +32,17 @@
         </nav> 
         <table id="tr-bd">
                 <tr>
-                    <th class="table-bd">COD.Treino</th>
+                    <th class="table-bd">ID</th>
                     <th class="table-bd">Nome</th>
-                    <th class="table-bd">Série</th>
-                    <th class="table-bd">Nível</th>
-                    <th class="table-bd">Status</th>
+                    <th class="table-bd">Telephone</th>
+                    <th class="table-bd">Email</th>
+                    <th class="table-bd">Escolaridade</th>
+                    <th class="table-bd">Formação</th>
+                    <th class="table-bd">CEP</th>
+                    <th class="table-bd">Logradouro</th>
+                    <th class="table-bd">Number</th>
+                    <th class="table-bd">Bairro</th>
+                    <th class="table-bd">Complemento</th>
                 </tr>
                 <tr class="teste">
                 <?php
@@ -44,9 +50,16 @@
                         echo "<tr>";
                         echo "<td class='table-bd'>".$rows['id']."</td>";
                         echo "<td class='table-bd'>".$rows['name']."</td>";
-                        echo "<td class='table-bd'>".$rows['series']."</td>";
-                        echo "<td class='table-bd'>".$rows['level']."</td>";
-                        echo "<td class='table-bd'>"."<a '<button type='button' href='delete_training.php?id=$rows[id]'>"."deletar"."</button>"."</a>"."</td>";
+                        echo "<td class='table-bd'>".$rows['telephone']."</td>";
+                        echo "<td class='table-bd'>".$rows['email']."</td>";
+                        echo "<td class='table-bd'>".$rows['education']."</td>";
+                        echo "<td class='table-bd'>".$rows['school']."</td>";
+                        echo "<td class='table-bd'>".$rows['zipCode']."</td>";
+                        echo "<td class='table-bd'>".$rows['publicPlace']."</td>";
+                        echo "<td class='table-bd'>".$rows['number']."</td>";
+                        echo "<td class='table-bd'>".$rows['neighborhood']."</td>";
+                        echo "<td class='table-bd'>".$rows['adjunct']."</td>";
+                        echo "<td class='table-bd'>"."<a '<button type='button' href='delete_trainer.php?id=$rows[id]'>"."deletar"."</button>"."</a>"."</td>";
                         echo "<td class='table-bd'>"."<a '<button type='button' href='edit.php?id=$rows[id]'>"."editar"."</button>"."</a>"."</td>";
                         echo "</tr>"; 
                     }         
@@ -55,5 +68,5 @@
             </table>
     </body><br>
         <a href="index.php"><button type="button">Home</button></a>
-        <a href="training.php"><button type="button">Cadastrar instrutor</button></a>
+        <a href="trainer.php"><button type="button">Cadastrar instrutor</button></a>
 </html>

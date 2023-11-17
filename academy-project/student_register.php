@@ -16,7 +16,8 @@
 	$objDb = new db();
 	$link = $objDb->conecta_mysql();
 
-	$sql = "insert into student(name, age, weight, height, date, zipCode, number, adjunct, telephone, email) values ('$name', '$age', '$weight', '$height', '$date', '$zp', '$number', '$adjunct', '$telephone', '$email')";
+	$sql = "insert into student(name, age, weight, height, date, zipCode, number, adjunct, telephone, email) values 
+	('$name', '$age', '$weight', '$height', '$date', '$zp', '$number', '$adjunct', '$telephone', '$email')";
 	mysqli_query($link, $sql);
 
 	//executar a query

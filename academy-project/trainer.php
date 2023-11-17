@@ -20,39 +20,39 @@
                 </li>
             </ul>
         </nav> 
-        <form>
+        <form action="trainer_register.php" method="post">
             <h2>Cadastro Instrutor</h2><br>
             <table>
                 <tr>
                     <td>
                         <label>Nome</label><br>
-                        <input type="text" placeholder="digite o nome..." required><br>
+                        <input type="text" name="name" placeholder="digite o nome..." required><br>
                         <label>Telefone</label><br>
-                        <input type="text" placeholder="digite o telefone..." required><br>
+                        <input type="text" name="telephone" placeholder="digite o telefone..." required><br>
                         <label>Email</label><br>
-                        <input type="text" placeholder="digite a email..." required><br>
+                        <input type="text" name="email" placeholder="digite a email..." required><br>
                         <label>Escolaridade</label><br>
-                        <input type="data" placeholder="digite a escolaridade..." required><br>     
-                        <label>Curso</label><br>
-                        <input type="data" placeholder="digite a curso..." required><br>  
+                        <input type="data" name="education" placeholder="digite a escolaridade..." required><br>     
+                        <label>Formação</label><br>
+                        <input type="data" name="school" placeholder="digite a formação..." required><br>  
                     </td>
                     
                     <td>
                         <label>CEP</label><br>
-                        <input type="text" placeholder="digite o nome..." required><br>
+                        <input type="text" name="zip-code" placeholder="digite o nome..." required><br>
                         <label>Logradouro</label><br>
-                        <input type="text" placeholder="digite a idade..." required><br>
+                        <input type="text" name="public-place" placeholder="digite a idade..." required><br>
                         <label>Número</label><br>
-                        <input type="text" placeholder="digite o peso..." required><br>
+                        <input type="text" name="number" placeholder="digite o peso..." required><br>
                         <label>Bairro</label><br>
-                        <input type="text" placeholder="digite a altura..." required><br>
+                        <input type="text" name="neighborhood" placeholder="digite a altura..." required><br>
                         <label>Complemento</label><br>
-                        <input type="data" placeholder="digite a data..." required><br>
+                        <input type="data" name="adjunct" placeholder="digite a data..." required><br>
                     </td>
                 </tr>
             </table><br>
             <button type="submit">Cadastrar</button>
-            <button type="button">Consultar instrutores</button>
+            <a href="consult_trainer.php"><button type="button">Consultar instrutores</button></a>
         </form>
     </body>
 </html>           
