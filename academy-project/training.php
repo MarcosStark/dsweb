@@ -20,13 +20,11 @@
                 </li>
             </ul>
         </nav> 
-        <form class="cad-training">
+        <form class="cad-training" action="training_register.php" method="post">
             <h2>Cadastro Treino</h2><br>
             <table id="cad-training">
                 <tr>
                     <td>
-                        <label>Código</label><br>
-                        <input id="code" type="text" placeholder="digite o nome..." required><br>
                         <label>Nome</label><br>
                         <input id="name" type="text" placeholder="digite o nome..." required><br>
                         <label>Série</label><br>
