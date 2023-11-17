@@ -60,7 +60,7 @@
                         echo "<td class='table-bd'>".$rows['neighborhood']."</td>";
                         echo "<td class='table-bd'>".$rows['adjunct']."</td>";
                         echo "<td class='table-bd'>"."<a '<button type='button' href='delete_trainer.php?id=$rows[id]'>"."deletar"."</button>"."</a>"."</td>";
-                        echo "<td class='table-bd'>"."<a '<button type='button' href='edit.php?id=$rows[id]'>"."editar"."</button>"."</a>"."</td>";
+                        echo "<td class='table-bd'>"."<a '<button type='button' href='edit_trainer.php?id=$rows[id]'>"."editar"."</button>"."</a>"."</td>";
                         echo "</tr>"; 
                     }         
                 ?>
