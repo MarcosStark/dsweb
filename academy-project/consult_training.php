@@ -1,7 +1,7 @@
 <?php
     //session_start();
     include_once('db_connection.php');
-    $sql = "SELECT * FROM student ORDER BY id DESC";
+    $sql = "SELECT * FROM training ORDER BY id DESC";
     $objDb = new db();
 	$link = $objDb->conecta_mysql();
     $result = mysqli_query($link, $sql);
@@ -38,13 +38,20 @@
                     <th class="table-bd">Nível</th>
                     <th class="table-bd">Status</th>
                 </tr>
-                <tr>
-                    <td class="table-bd" id="tr-bd-code"></td>
-                    <td class="table-bd" id="tr-bd-name"></td>
-                    <td class="table-bd" id="tr-bd-range"></td>
-                    <td class="table-bd" id="tr-bd-level"></td>
-                    <td class="table-bd" id="tr-bd-status"></td>
-                </tr>
+                <tr class="teste">
+                <?php
+                    while($rows = mysqli_fetch_array($result)) {
+                        echo "<tr>";
+                        echo "<td class='table-bd'>".$rows['id']."</td>";
+                        echo "<td class='table-bd'>".$rows['name']."</td>";
+                        echo "<td class='table-bd'>".$rows['series']."</td>";
+                        echo "<td class='table-bd'>".$rows['level']."</td>";
+                        echo "<td class='table-bd'>"."<a '<button type='button' href='delete_training.php?id=$rows[id]'>"."deletar"."</button>"."</a>"."</td>";
+                        echo "<td class='table-bd'>"."<a '<button type='button' href='edit.php?id=$rows[id]'>"."editar"."</button>"."</a>"."</td>";
+                        echo "</tr>"; 
+                    }         
+                ?>
+            </tr>
             </table>
     </body><br>
         <a href="index.php"><button type="button">Home</button></a>

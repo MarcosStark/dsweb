@@ -26,11 +26,11 @@
                 <tr>
                     <td>
                         <label>Nome</label><br>
-                        <input id="name" type="text" placeholder="digite o nome..." required><br>
+                        <input id="name" name="name" type="text" placeholder="digite o nome..." required><br>
                         <label>Série</label><br>
-                        <input id="range" type="text" placeholder="digite a idade..." required><br>
+                        <input id="series" name="series" type="text" placeholder="digite a série..." required><br>
                         <label>Nível</label><br>
-                        <input id="level" type="text" placeholder="digite o peso..." required><br>
+                        <input id="level" name="level" type="text" placeholder="digite o nível..." required><br>
                         <label>Status</label><br>
                         <span id="status-train">Não iniciado</span>
                     </td>

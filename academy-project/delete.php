@@ -16,7 +16,7 @@
 	} else {
 		echo 'Erro ao registrar o usuário!';
 	}*/
-	header("Location: student.php");
+	header("Location: consult_students.php");
 
 
 ?>	
