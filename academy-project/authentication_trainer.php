@@ -1,5 +1,6 @@
 <?php
 
+
     session_start();
 
     require_once('db_connection.php'); 
@@ -15,13 +16,24 @@
 
     $user_data = mysqli_fetch_array($result);
 
-    if(isset($user_data['email'])){
+    if($result){
 
-        $_SESSION['email'] = $user_data['email'];
+        if(isset($user_data['email'])){
 
-        header('Location: consult_students.php');
+            $_SESSION['email'] = $user_data['email'];
+
+            header('Location: student.php');
+
+            var_dump($user_data);
+
+        } else {
+
+            header('Location: student.php?erro=1');
+        }
+        
+    } else {
+        echo "Erro na execução da consulta, favor entrar em contato com os responsáveis pelo site.";
     }
 
-    var_dump($user_data);
 
 ?>
