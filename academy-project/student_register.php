@@ -12,12 +12,13 @@
     $adjunct = $_POST['adjunct'];
     $telephone = $_POST['telephone'];
 	$email = $_POST['email'];
+	$password = $_POST['password'];
 
 	$objDb = new db();
 	$link = $objDb->conecta_mysql();
 
-	$sql = "insert into student(name, age, weight, height, date, zipCode, number, adjunct, telephone, email) values 
-	('$name', '$age', '$weight', '$height', '$date', '$zp', '$number', '$adjunct', '$telephone', '$email')";
+	$sql = "insert into student(name, age, weight, height, date, zipCode, number, adjunct, telephone, email, password) values 
+	('$name', '$age', '$weight', '$height', '$date', '$zp', '$number', '$adjunct', '$telephone', '$email', '$password')";
 	mysqli_query($link, $sql);
 
 	//executar a query

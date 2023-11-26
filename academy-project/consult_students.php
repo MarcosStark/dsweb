@@ -1,5 +1,5 @@
 <?php
-    //session_start();
+    session_start();
     include_once('db_connection.php');
     $sql = "SELECT * FROM student ORDER BY id DESC";
     $objDb = new db();

@@ -5,8 +5,14 @@
         <link rel="icon" type="image/x-icon" href="https://img.elo7.com.br/product/main/32D3EB5/adesivo-parede-academia-fitness-crossfit-homem-mulher-halter-homem.jpg">
         <link rel="stylesheet" href="style.css"/> 
     </head>
-    <body>
-         
+    <body>      
+        <form action="authentication_trainer.php" method="post" id="login"> 
+                <label>email</label><br>
+                <input name="email"><br>
+                <label>senha</label><br>
+                <input name="password">
+                <button type="submit">Login</button>
+        </form> 
         <header> 
             <img src="https://scontent.faju4-2.fna.fbcdn.net/v/t39.30808-6/387735156_865821438395212_7197582003961948565_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Jy28BazB7S8AX8JFEUk&_nc_ht=scontent.faju4-2.fna&oh=00_AfD1UsYgEnm6HWtMC7Ovi6bePEwBFC1MVl_089wS67VTCQ&oe=655B26F9">
             <h1>Academia Life Stylle</h1></header>
@@ -48,6 +54,8 @@
                         <input type="text" name="neighborhood" placeholder="digite a altura..." required><br>
                         <label>Complemento</label><br>
                         <input type="data" name="adjunct" placeholder="digite a data..." required><br>
+                        <label>Senha</label><br>
+                        <input type="password" name="password" placeholder="digite a senha..." required><br>
                     </td>
                 </tr>
             </table><br>
