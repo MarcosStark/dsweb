@@ -12,12 +12,14 @@
     $number = $_POST['number'];
     $neighborhood = $_POST['neighborhood'];
     $adjunct = $_POST['adjunct'];
+	$password = $_POST['password'];
+
 
 	$objDb = new db();
 	$link = $objDb->conecta_mysql();
 
-	$sql = "insert into trainer(name, telephone, email, education, school, zipCode, publicPlace, number, neighborhood, adjunct) values 
-    ('$name', '$telephone', '$email', '$education', '$school', '$zipCode', '$publicPlace', '$number', '$neighborhood', '$adjunct')";
+	$sql = "insert into trainer(name, telephone, email, education, school, zipCode, publicPlace, number, neighborhood, adjunct, password) values 
+    ('$name', '$telephone', '$email', '$education', '$school', '$zipCode', '$publicPlace', '$number', '$neighborhood', '$adjunct', '$password')";
 	mysqli_query($link, $sql);
 
 	//executar a query
