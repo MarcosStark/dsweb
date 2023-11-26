@@ -6,10 +6,10 @@
         <link rel="stylesheet" href="style.css"/> 
     </head>
     <body>
-         
         <header> 
             <img src="https://scontent.faju4-2.fna.fbcdn.net/v/t39.30808-6/387735156_865821438395212_7197582003961948565_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Jy28BazB7S8AX8JFEUk&_nc_ht=scontent.faju4-2.fna&oh=00_AfD1UsYgEnm6HWtMC7Ovi6bePEwBFC1MVl_089wS67VTCQ&oe=655B26F9">
-            <h1>Academia Life Stylle</h1></header>
+            <h1>Academia Life Stylle</h1>
+        </header>
         <nav>
             <ul>
                 <li>
@@ -17,7 +17,6 @@
                     <ul><a href="student.php">ALUNO</a></ul>
                     <ul><a href="training.php">TREINO</a></ul>
                     <ul><a href="trainer.php">INSTRUTOR</a></ul>
-
                 </li>
             </ul>
         </nav> 
