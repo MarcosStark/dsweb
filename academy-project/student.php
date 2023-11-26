@@ -1,10 +1,9 @@
 <?php
-    //session_start();
-    include_once('db_connection.php');
-    $sql = "SELECT * FROM student ORDER BY id DESC";
-    $objDb = new db();
-	$link = $objDb->conecta_mysql();
-    $result = mysqli_query($link, $sql);
+    session_start();
+
+    if(!isset($_SESSION['email'])){
+        header('Location: index.php');
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,13 +14,6 @@
         <link rel="stylesheet" href="style.css"/> 
     </head>
     <body>
-        <form action="authentication.php" method="post" id="login"> 
-                <label>email</label><br>
-                <input name="email"><br>
-                <label>senha</label><br>
-                <input name="password">
-                <button type="submit">Login</button>
-        </form>         
         <header> 
             <img src="https://scontent.faju4-2.fna.fbcdn.net/v/t39.30808-6/387735156_865821438395212_7197582003961948565_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-RYoAgKTZNsAX8nTrKg&_nc_ht=scontent.faju4-2.fna&oh=00_AfB9vdLluciTxcgkCw_Zd--S--Vf0aCi9DQKqiwFFdLNsg&oe=65670479">
             <h1>Academia Life Stylle</h1>
