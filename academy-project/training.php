@@ -38,8 +38,6 @@
                         <input id="series" name="series" type="text" placeholder="digite a série..." required><br>
                         <label>Nível</label><br>
                         <input id="level" name="level" type="text" placeholder="digite o nível..." required><br>
-                        <label>Status</label><br>
-                        <span id="status-train">Não iniciado</span>
                     </td>
                 </tr>
             </table><br>

@@ -40,9 +40,9 @@
                 </li>
             </ul>
         </nav> 
-        <form action="save_edit_training.php" method="post" id="std-form">
+        <form action="save_edit_training.php" method="post" id="edit-training">
             <h2>Atualizar Treino</h2><br>
-            <table id="cad-training">
+            <table>
                 <tr>
                     <td>
                         <label>Nome</label><br>
@@ -51,8 +51,6 @@
                         <input id="series" name="series" type="text" value=<?php echo $series;?> placeholder="digite a série..." required><br>
                         <label>Nível</label><br>
                         <input id="level" name="level" type="text" value=<?php echo $level;?> placeholder="digite o nível..." required><br>
-                        <label>Status</label><br>
-                        <span id="status-train">Não iniciado</span>
                     </td>
                 </tr>
             </table><br>

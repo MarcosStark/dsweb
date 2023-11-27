@@ -39,7 +39,7 @@
                 </li>
             </ul>
         </nav> 
-        <form action="trainer_register.php" method="post">
+        <form action="trainer_register.php" method="post" id="cad-trainer">
             <h2>Cadastro Instrutor</h2><br>
             <table>
                 <tr>
