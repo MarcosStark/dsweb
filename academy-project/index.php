@@ -9,14 +9,28 @@
         <link rel="icon" type="image/x-icon" href="https://img.elo7.com.br/product/main/32D3EB5/adesivo-parede-academia-fitness-crossfit-homem-mulher-halter-homem.jpg">
         <link rel="stylesheet" href="style.css"/> 
     </head>
+    
     <form action="authentication.php" method="post" id="login">
-        <label>Área de Login</label><br> 
-        <label>email</label><br>
-        <input name="email"><br>
-        <label>senha</label><br>
-        <input name="password">
-        <label>Código ADM</label><br>
-        <input name="codAdm">
+        <label class="form-login">Login ADM</label><br> 
+        <label class="form-login">email</label><br>
+        <input class="form-login" name="email"><br>
+        <label class="form-login">senha</label><br>
+        <input class="form-login" name="password"><br>
+        <label class="form-login">código adm</label><br>
+        <input class="form-login" name="codAdm">
+        <button type="submit">Entrar</button><br>
+        <?php
+            if($erro == 1){
+                echo "<font color='white'>Usuário ou senha inválidos(s)</font>";
+            }
+        ?>
+    </form>         
+    <form action="authentication_trainer.php" method="post" id="login-trainer">
+        <label class="form-login">Login Treinador</label><br> 
+        <label class="form-login">email</label><br>
+        <input class="form-login" name="email"><br>
+        <label class="form-login">senha</label><br>
+        <input class="form-login" name="password"><br><br>
         <button type="submit">Entrar</button><br>
         <?php
             if($erro == 1){
@@ -29,6 +43,11 @@
             <img src="https://scontent.faju4-2.fna.fbcdn.net/v/t39.30808-6/387735156_865821438395212_7197582003961948565_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-RYoAgKTZNsAX8nTrKg&_nc_ht=scontent.faju4-2.fna&oh=00_AfB9vdLluciTxcgkCw_Zd--S--Vf0aCi9DQKqiwFFdLNsg&oe=65670479">
             <h1>Academia Life Stylle</h1>
         </header>
+        <div id="btns-login">
+            <label>Login</label>
+            <button type="button" id="btn-adm" onclick="loginAdm()">adm</button>
+            <button type="button" id="btn-trainer" onclick="loginTrainer()">treinador</button>
+        </div>
         <nav>
             <ul>
                 <li>
@@ -46,4 +65,5 @@
             </tr>
         </table>
     </body>
+    <script src="academy.js"></script>
 </html>

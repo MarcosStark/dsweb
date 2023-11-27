@@ -22,13 +22,13 @@
 
             $_SESSION['email'] = $user_data['email'];
 
-            header('Location: student.php');
+            header('Location: index.php');
 
             var_dump($user_data);
 
         } else {
 
-            header('Location: student.php?erro=1');
+            header('Location: index.php?erro=1');
         }
         
     } else {
