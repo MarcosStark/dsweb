@@ -1,5 +1,10 @@
 <?php
-    //session_start();
+    session_start();
+
+    if(!isset($_SESSION['codAdm'])){
+        header('Location: index.php');
+    }
+    
     include_once('db_connection.php');
     $sql = "SELECT * FROM trainer ORDER BY id DESC";
     $objDb = new db();

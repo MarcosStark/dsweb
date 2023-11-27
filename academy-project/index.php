@@ -15,6 +15,8 @@
         <input name="email"><br>
         <label>senha</label><br>
         <input name="password">
+        <label>Código ADM</label><br>
+        <input name="codAdm">
         <button type="submit">Entrar</button><br>
         <?php
             if($erro == 1){
