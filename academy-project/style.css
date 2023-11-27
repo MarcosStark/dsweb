@@ -96,19 +96,28 @@ button{
 
 .cad-training{    
     margin-left: 700px;
-    height: 400px;
+    height: 310px;
     width: 300px;
+    padding-left: 20px;
 }
 
 #cad-training{
     margin-left: 10px;
-    padding-left: 60px;
+}
+
+#cad-trainer{
+    padding-left: 40px;
+}
+
+#edit-training{
+    padding-left: 40px;
+    width: 300px;
+    height: 310px;
+    margin-left: 660px;     
 }
 
 #std-form{
-    height: 350px;
-    width: 400px;
-    margin-left: 640px;
+    padding-left: 40px;
 }
 
 #status-train{
