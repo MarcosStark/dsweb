@@ -102,6 +102,13 @@ button{
 
 #cad-training{
     margin-left: 10px;
+    padding-left: 60px;
+}
+
+#std-form{
+    height: 350px;
+    width: 400px;
+    margin-left: 640px;
 }
 
 #status-train{
@@ -135,12 +142,41 @@ th{
     border-color:#A0522D;
     padding: 10px 10px 5px 7px;
     float: right;
-    height: 175px;
-    width: 260px;
+    height: 220px;
+    width: 180px;
     margin-top: 15px;
+    visibility: hidden;
+    display: none;
+}
+
+#login-trainer{
+    border: 2px solid black;
+    border-style: outset;
+    border-radius: 5px;
+    border-color:#A0522D;
+    padding: 10px 10px 5px 7px;
+    float: right;
+    height: 190px;
+    width: 180px;
+    margin-top: 15px;
+    visibility: hidden;
+    display: none;
+    
 }
 
 #login>button{
     margin-top: 8px;
 }
+
+.form-login{
+    width: 120px;
+    font-size: 17px;
+
+}
+
+#btns-login{
+    float: right;
+}
+
+
 
