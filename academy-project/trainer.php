@@ -28,7 +28,9 @@
         </form> 
         <header> 
             <img src="https://scontent.faju4-2.fna.fbcdn.net/v/t39.30808-6/387735156_865821438395212_7197582003961948565_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-RYoAgKTZNsAX8nTrKg&_nc_ht=scontent.faju4-2.fna&oh=00_AfB9vdLluciTxcgkCw_Zd--S--Vf0aCi9DQKqiwFFdLNsg&oe=65670479">
-            <h1>Academia Life Stylle</h1></header>
+            <h1>Academia Life Stylle</h1>
+            <button><a href="exit.php">Sair</a></button>
+        </header>
         <nav>
             <ul>
                 <li>

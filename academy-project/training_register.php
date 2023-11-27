@@ -12,14 +12,6 @@
 	$sql = "insert into training(name, series, level) values ('$name', '$series', '$level')";
 	mysqli_query($link, $sql);
 
-	//executar a query
-
-	/*if(mysqli_query($link, $sql)){
-		echo 'Usuário registrado com sucesso!';
-	} else {
-		echo 'Erro ao registrar o usuário!';
-	}*/
-
 	header("Location: training.php");
 
 ?>	

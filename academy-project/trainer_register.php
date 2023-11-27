@@ -22,14 +22,6 @@
     ('$name', '$telephone', '$email', '$education', '$school', '$zipCode', '$publicPlace', '$number', '$neighborhood', '$adjunct', '$password')";
 	mysqli_query($link, $sql);
 
-	//executar a query
-
-	/*if(mysqli_query($link, $sql)){
-		echo 'Usuário registrado com sucesso!';
-	} else {
-		echo 'Erro ao registrar o usuário!';
-	}*/
-
 	header("Location: trainer.php");
 
 ?>	

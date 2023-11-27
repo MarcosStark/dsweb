@@ -21,14 +21,6 @@
 	('$name', '$age', '$weight', '$height', '$date', '$zp', '$number', '$adjunct', '$telephone', '$email', '$password')";
 	mysqli_query($link, $sql);
 
-	//executar a query
-
-	/*if(mysqli_query($link, $sql)){
-		echo 'Usuário registrado com sucesso!';
-	} else {
-		echo 'Erro ao registrar o usuário!';
-	}*/
-
 	header("Location: student.php");
 
 ?>	

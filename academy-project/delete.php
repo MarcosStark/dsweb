@@ -10,12 +10,6 @@
 	$sql = "DELETE FROM student WHERE id=$id";  
 	mysqli_query($link, $sql);
 
-	//executar a query
-	/*if(mysqli_query($link, $sql)){
-		echo 'Usuário registrado com sucesso!';
-	} else {
-		echo 'Erro ao registrar o usuário!';
-	}*/
 	header("Location: consult_students.php");
 
 
